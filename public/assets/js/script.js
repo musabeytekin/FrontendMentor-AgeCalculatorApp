@@ -19,12 +19,6 @@ form.addEventListener("submit", (e) => {
   );
   const dayResult = document.querySelector("#day-result .result__item--number");
 
-  // const errors = getErrors(
-  //   parseInt(day.value.trim()),
-  //   parseInt(month.value.trim()),
-  //   parseInt(year.value.trim())
-  // );
-
   const currentDate = new Date();
 
   let success = true;
