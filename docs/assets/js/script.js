@@ -63,9 +63,39 @@ form.addEventListener("submit", (e) => {
     const date = new Date(year, month - 1, day);
     const difference = dateDifference(date, currentDate);
 
-    yearResult.innerHTML = difference.years;
-    monthResult.innerHTML = difference.months;
-    dayResult.innerHTML = difference.days;
+    let years = 0,
+      months = 0,
+      days = 0;
+    const yearCounter = () => {
+      if (years == difference.years) {
+        clearInterval(yearInterval);
+      } else {
+        years++;
+      }
+      yearResult.innerHTML = years;
+    };
+
+    const monthCounter = () => {
+      if (months == difference.months) {
+        clearInterval(monthInterval);
+      } else {
+        months++;
+      }
+      monthResult.innerHTML = months;
+    };
+
+    const dayCounter = () => {
+      if (days == difference.days) {
+        clearInterval(dayInterval);
+      } else {
+        days++;
+      }
+      dayResult.innerHTML = days;
+    };
+
+    let yearInterval = setInterval(yearCounter, 75);
+    let monthInterval = setInterval(monthCounter, 75);
+    let dayInterval = setInterval(dayCounter, 75);
   }
 });
 
