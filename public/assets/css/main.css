@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.ac {
+  flex: 1;
+  max-width: 40%;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  border-bottom-right-radius: 160px;
+  padding: 3rem;
+}
+
+.date-form {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  color: hsl(0, 1%, 44%);
+  border-bottom: 1px solid #e0e0e0;
+  padding-right: 20%;
+  padding-bottom: 2rem;
+}
+.date-form .date-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.date-form .date-input label {
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.date-form .date-input input {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 0.8rem;
+  width: 100%;
+  font-size: 25px;
+  caret-color: hsl(259, 100%, 65%);
+}
+.date-form .date-input input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.date-form .date-input__error label {
+  color: hsl(0, 100%, 67%);
+}
+.date-form .date-input__error input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.date-form .date-input__error span {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.6rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.date-form button {
+  position: absolute;
+  border: none;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.date-form button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.result {
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.result__item--number {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (max-width: 375px) {
+  .ac {
+    max-width: 95%;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .date-form {
+    gap: 1rem;
+    padding-right: 0;
+    padding-bottom: 3rem;
+  }
+  .date-form .date-input input {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .date-form button {
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+    bottom: 0;
+    right: 50%;
+  }
+  .result {
+    font-size: 3rem;
+    padding-top: 3.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

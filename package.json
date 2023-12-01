@@ -1,0 +1,16 @@
+{
+  "name": "age-calculator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded scss:public/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed scss:public/assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,104 @@
+.ac {
+  flex: 1;
+  max-width: 40%;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  border-bottom-right-radius: 160px;
+  padding: 3rem;
+}
+
+.date-form {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  color: map-get($neutral-colors, smokey-grey);
+  border-bottom: 1px solid #e0e0e0;
+
+  padding: {
+    right: 20%;
+    bottom: 2rem;
+  }
+
+  .date-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+
+    label {
+      letter-spacing: 3px;
+      font : {
+        size: 11px;
+        weight: 700;
+      }
+    }
+
+    input {
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 0.8rem;
+      width: 100%;
+      font-size: 25px;
+      caret : {
+        color: map-get($primary-colors, purple);
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid map-get($primary-colors, purple);
+      }
+    }
+
+    &__error {
+      label {
+        color: map-get($map: $primary-colors, $key: red);
+      }
+
+      input {
+        border: 1px solid map-get($map: $primary-colors, $key: red);
+      }
+
+      span {
+        color: map-get($map: $primary-colors, $key: red);
+        font: {
+          size: 0.6rem;
+          style: italic;
+          weight: 400;
+        }
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    border: none;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    background-color: map-get($primary-colors, purple);
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: map-get($neutral-colors, off-black);
+    }
+  }
+}
+
+.result {
+  font: {
+    style: italic;
+    size: 4rem;
+    weight: 800;
+  }
+
+  &__item--number {
+    color: map-get($primary-colors, purple);
+  }
+}

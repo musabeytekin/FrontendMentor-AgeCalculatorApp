@@ -1,0 +1,35 @@
+@media (max-width: 375px) {
+  .ac {
+    max-width: 95%;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+
+  .date-form {
+    gap: 1rem;
+    
+    padding: {
+      right: 0;
+      bottom: 3rem;
+    }
+    .date-input {
+      input {
+        font-size: 1.2rem;
+        max-width: 100%;
+      }
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      padding: 14px;
+      bottom: 0;
+      right: 50%;
+    }
+  }
+  .result {
+    font-size: 3rem;
+    padding-top: 3.2rem;
+  }
+}
