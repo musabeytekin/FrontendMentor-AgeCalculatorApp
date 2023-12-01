@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <section class="ac">
+      <div class="card">
+        <form class="date-form">
+          <div class="date-input date-input__day">
+            <label for="day">DAY</label>
+            <input id="day" type="text" placeholder="DD" />
+            <span class="error-message"></span>
+          </div>
+
+          <div class="date-input date-input__month">
+            <label for="month">MONTH</label>
+            <input id="month" type="text" placeholder="MM" />
+            <span class="error-message"></span>
+          </div>
+
+          <div class="date-input date-input__year">
+            <label for="year">YEAR</label>
+            <input id="year" type="text" placeholder="YYYY" />
+            <span class="error-message"></span>
+          </div>
+          <button type="submit">
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt=""
+              class="img-fluid"
+            />
+          </button>
+        </form>
+        <div class="result">
+          <div id="year-result" class="result__item">
+            <span class="result__item--number">--</span>
+            <span>years</span>
+          </div>
+          <div id="month-result" class="result__item">
+            <span class="result__item--number">--</span>
+            <span>months</span>
+          </div>
+          <div id="day-result" class="result__item">
+            <span class="result__item--number">--</span>
+            <span>days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
